@@ -41,7 +41,6 @@ class OuroborosFromOuterSpace
   end
 
   def collect
-    GC.start
     current = {}
     total = 0
     ObjectSpace.each_object do |object|
